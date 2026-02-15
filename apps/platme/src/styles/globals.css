@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import "@repo/ui/globals.css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+@layer components {
+    .slider {
+        @apply [&::-webkit-scrollbar-thumb]:bg-scroll-thumb [&::-webkit-scrollbar-track]:bg-scroll-track [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:hover:bg-green-400;
+    }
+    .primary-btn {
+        @apply bg-green-800 text-white transition-colors hover:bg-green-900 active:bg-green-950/90;
+    }
+}

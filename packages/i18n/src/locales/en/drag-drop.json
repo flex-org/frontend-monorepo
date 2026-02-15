@@ -1,0 +1,15 @@
+{
+    "main-title": "Customize your platform",
+    "sub-title": "pick your platform features and make it yours.",
+    "list": "Features List",
+    "chosen-features-number": "Chosen Features Number",
+    "chosen-features-price": "Price",
+    "drag-drop-here": "Drag & Drop the features here",
+    "feature-already-exist": "this feature already exist",
+    "picked-all": "You have picked all the features!",
+    "continue": "Save and continue",
+    "back": "Back",
+    "do-not-refresh": "Please, don't refresh the page so that you don't lose any progress",
+    "saving": "Saving",
+    "saved-successfully": "Saved successfully"
+}

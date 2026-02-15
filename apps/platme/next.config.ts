@@ -1,0 +1,57 @@
+import type { NextConfig } from 'next';
+import bundleAnalyzer from '@next/bundle-analyzer';
+const withBundleAnalyzer = bundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true',
+});
+
+const nextConfig: NextConfig = {
+    reactCompiler: true,
+    compress: true,
+    poweredByHeader: false,
+    cacheComponents: true,
+    reactStrictMode: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.platme.com',
+            },
+        ],
+        formats: ['image/avif', 'image/webp'],
+    },
+    // async headers() {
+    //     return [
+    //         {
+    //             source: '/(.*)',
+    //             headers: [
+    //                 { key: 'X-DNS-Prefetch-Control', value: 'on' },
+    //                 {
+    //                     key: 'Strict-Transport-Security',
+    //                     value: 'max-age=63072000; includeSubDomains',
+    //                 },
+    //                 { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+    //                 { key: 'X-Content-Type-Options', value: 'nosniff' },
+    //                 {
+    //                     key: 'Referrer-Policy',
+    //                     value: 'origin-when-cross-origin',
+    //                 },
+    //             ],
+    //         },
+    //     ];
+    // },
+    experimental: {
+        optimizePackageImports: [
+            'lucide-react',
+            'motion',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-tooltip',
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-select',
+        ],
+        serverActions: {
+            bodySizeLimit: '2mb',
+        },
+    },
+};
+
+export default withBundleAnalyzer(nextConfig);

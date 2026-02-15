@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     compress: true,
     poweredByHeader: false,
     cacheComponents: true,
+    transpilePackages: ["@repo/ui", "@repo/auth", "@repo/i18n"],
     reactStrictMode: true,
     
     images: {

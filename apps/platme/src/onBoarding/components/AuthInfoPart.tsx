@@ -1,5 +1,6 @@
-import { getTranslation } from '@/i18n/server';
+import { getTranslation } from '@repo/i18n/server';
 import { Github } from 'lucide-react';
+
 
 const AuthInfoPart = async ({
     lng,

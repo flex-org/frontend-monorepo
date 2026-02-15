@@ -1,12 +1,12 @@
 'use client';
-import { Button } from '@/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button';
 import { usePathname, useRouter } from 'next/navigation';
-import { useTranslation } from '@/i18n/client';
+import { useTranslation } from '@repo/i18n/client';
 import { useTransition } from 'react';
 import { storeData } from '../actions/onBoardingActions';
 import { toast } from 'sonner';
 import { FinalSellingSystemData } from '../types';
-import { Spinner } from '@/components/ui/spinner';
+import { Spinner } from '@repo/ui/components/ui/spinner';
 
 const BackAndForwardButtons = ({
     lng,

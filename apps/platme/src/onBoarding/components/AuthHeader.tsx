@@ -1,6 +1,6 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ToolTipComponent from '@/components/ToolTipComponent';
-import { Button } from '@/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 const AuthHeader = ({ lng }: { lng: string }) => {

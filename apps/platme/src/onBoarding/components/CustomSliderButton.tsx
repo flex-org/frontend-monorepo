@@ -1,8 +1,7 @@
 'use client';
 
-import { cn } from '@/utils/cn';
-import { motion } from 'framer-motion';
-
+import { motion } from 'motion/react';
+import { cn } from '@repo/ui/utils/cn';
 interface CustomSliderButtonProps {
     value: boolean;
     payment?: boolean;
@@ -73,11 +72,15 @@ const CustomSliderButton = ({
                     buttonsClassNames,
                 )}
             >
-                <span className={`relative z-20 dark:text-white ${payment && 'text-xs sm:text-sm'}`}>
+                <span
+                    className={`relative z-20 dark:text-white ${payment && 'text-xs sm:text-sm'}`}
+                >
                     {yesLabel}
                 </span>
                 {payment && (
-                    <span className={`z-50 mr-1 sm:mr-2 ml-1.5 inline-block rounded bg-green-100 px-1.5 py-0.5 text-[10px] font-bold text-green-700 dark:text-black`}>
+                    <span
+                        className={`z-50 mr-1 ml-1.5 inline-block rounded bg-green-100 px-1.5 py-0.5 text-[10px] font-bold text-green-700 sm:mr-2 dark:text-black`}
+                    >
                         -20%
                     </span>
                 )}

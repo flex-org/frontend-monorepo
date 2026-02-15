@@ -16,12 +16,13 @@
     "dependencies": {
         "@dnd-kit/core": "^6.3.1",
         "@hookform/resolvers": "^5.2.2",
-        "@repo/ui": "workspace:*",
         "@repo/auth": "workspace:*",
+        "@repo/ui": "workspace:*",
         "accept-language": "^3.0.20",
         "dayjs": "^1.11.19",
         "html-react-parser": "^5.2.11",
-        "motion": "^12.23.24",
+        "lucide-react": "^0.555.0",
+        "motion": "^12.34.0",
         "nanoid": "^5.1.6",
         "next": "^16.0.10",
         "next-auth": "^5.0.0-beta.30",
@@ -36,8 +37,8 @@
         "zustand": "^5.0.8"
     },
     "devDependencies": {
-        "@repo/typescript-config": "workspace:*",
         "@next/bundle-analyzer": "^16.0.5",
+        "@repo/typescript-config": "workspace:*",
         "@tailwindcss/postcss": "^4",
         "@types/node": "^20",
         "@types/react": "^19",

@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     poweredByHeader: false,
     cacheComponents: true,
     reactStrictMode: true,
+    
     images: {
         remotePatterns: [
             {
@@ -43,10 +44,7 @@ const nextConfig: NextConfig = {
         optimizePackageImports: [
             'lucide-react',
             'motion',
-            '@radix-ui/react-dropdown-menu',
-            '@radix-ui/react-tooltip',
-            '@radix-ui/react-accordion',
-            '@radix-ui/react-select',
+            '@repo/ui'
         ],
         serverActions: {
             bodySizeLimit: '2mb',
